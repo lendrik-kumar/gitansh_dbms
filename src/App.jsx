@@ -320,7 +320,7 @@ function App() {
   if (loading) {
     return (
       <div className="flex min-h-screen items-center justify-center">
-        <p className="mono text-slate-600">Initializing SQLite database...</p>
+        <p className="mono text-slate-600">Connecting to MySQL database...</p>
       </div>
     )
   }
@@ -333,8 +333,8 @@ function App() {
             <p className="mono text-xs uppercase tracking-[0.22em] text-teal-700">Production Ready Demo</p>
             <h1 className="mt-2 text-3xl font-bold text-slate-900">Smart Society / Apartment Management</h1>
             <p className="mt-2 max-w-3xl text-sm text-slate-600">
-              SQLite + React + Tailwind + shadcn-style UI. Includes full CRUD, SQL console, constraint validation,
-              analytical reports, and transaction demo.
+              MySQL + React + Express + Tailwind + shadcn-style UI. Includes full CRUD, SQL console,
+              constraint validation, analytical reports, and transaction demo.
             </p>
           </div>
 
@@ -812,7 +812,7 @@ function App() {
             <Card>
               <CardHeader>
                 <CardTitle>Raw SQL Runner</CardTitle>
-                <CardDescription>Run SELECT/INSERT/UPDATE/DELETE directly on SQLite demo DB.</CardDescription>
+                <CardDescription>Run SELECT/INSERT/UPDATE/DELETE directly on MySQL database.</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
                 <Textarea className="mono min-h-[220px]" value={sqlText} onChange={(e) => setSqlText(e.target.value)} />
